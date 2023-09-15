@@ -178,7 +178,7 @@ Congratulations! You should now have a working cluster.....
 Delete you your certs and Azure resources.
 
 ```
-rm -R certs my-safe-directory
+rm -R certs my-safe-directory keys
 az group delete --name $rg
 ```
 

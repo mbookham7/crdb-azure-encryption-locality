@@ -1,4 +1,4 @@
-# CockroachDB in Kubernetes with Encrypted Stores
+# CockroachDB in Kubernetes with an Encrypted Store and Pod Locality Enabled
 
 In this repo we will deploy CockroachDB into Kubernetes with encrypted disks.
 
