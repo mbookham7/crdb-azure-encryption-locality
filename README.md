@@ -4,7 +4,7 @@ In this repo we will deploy CockroachDB into Kubernetes with encrypted disks.
 
 ```
 vm_type="Standard_D4_v2"
-n_nodes=3
+n_nodes=4
 rg="mb-crdb-aks-encryption-region"
 clus1="crdb-aks-encryption-uksouth"
 clus1_vnet_address_space="10.1.0.0/16"

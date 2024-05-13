@@ -85,7 +85,7 @@ generic cockroachdb.key \
 ```
 
 
-Apply the provided Kubernetes manifests into each AKS cluster. These contain several different resources including the statefulSet. In this file you will need to make a couple of edits. The first of these is to add the correct namespace name for each region to the StatefulSet config for each region. See the example below:
+Apply the provided Kubernetes manifests into each AKS cluster. These contain several different resources including the statefulSet. In this file you will need to make a couple of edits. The first of these is to add the correct namespace name for the region to the StatefulSet config for the region you are deploying into. See the example below:
 
 ```
 apiVersion: apps/v1
@@ -101,7 +101,7 @@ Next is to update the join command that is ran when the CockroachDB binary is st
 See an example below:
 
 ```
---join cockroachdb-0.cockroachdb.uksouth,cockroachdb-1.cockroachdb.uksouth,cockroachdb-2.cockroachdb.uksouth,cockroachdb-0.cockroachdb.ukwest,cockroachdb-1.cockroachdb.ukwest,cockroachdb-2.cockroachdb.ukwest,cockroachdb-0.cockroachdb.northeurpoe,cockroachdb-1.cockroachdb.northeurope,cockroachdb-2.cockroachdb.northeurope
+--join cockroachdb-0.cockroachdb.uksouth,cockroachdb-1.cockroachdb.uksouth,cockroachdb-2.cockroachdb.uksouth
 ```
 
 Once you have updated the three files as required you can apply these to the three AKS clusters.
